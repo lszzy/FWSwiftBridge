@@ -22,6 +22,12 @@
     
     [WXApi registerApp:@"" universalLink:@""];
     [AlipaySDK defaultService];
+    
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Swift" style:UIBarButtonItemStylePlain target:self action:@selector(onSwift)];
+}
+
+- (void)onSwift {
+    [self.navigationController pushViewController:[ViewController new] animated:YES];
 }
 
 @end
