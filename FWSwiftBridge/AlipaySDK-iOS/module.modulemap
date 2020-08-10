@@ -1,0 +1,8 @@
+module AlipaySDK {
+    requires objc
+    header "AlipaySDK.framework/Headers/AlipaySDK.h"
+    header "AlipaySDK.framework/Headers/APayAuthInfo.h"
+    header "AlipaySDK.framework/Headers/AFServiceCenter.h"
+    header "AlipaySDK.framework/Headers/AFServiceResponse.h"
+    export *
+}

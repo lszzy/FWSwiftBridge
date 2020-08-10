@@ -13,21 +13,21 @@ Pod::Spec.new do |spec|
   spec.default_subspecs    = [ 'WechatOpenSDK', 'AlipaySDK-iOS' ]
 
   spec.subspec 'WechatOpenSDK' do |plugin|
-    plugin.source_files = 'WechatOpenSDK/*.swift', 'WechatOpenSDK/*.h'
-    plugin.public_header_files = 'WechatOpenSDK/*.h'
-    plugin.vendored_libraries = 'WechatOpenSDK/libWeChatSDK.a'
-    plugin.xcconfig = { 'SWIFT_INCLUDE_PATHS' => '${PODS_TARGET_SRCROOT}/WechatOpenSDK', 'OTHER_LDFLAGS' => '-ObjC -all_load' }
-    plugin.preserve_paths = 'WechatOpenSDK/module.modulemap'
+    plugin.source_files = 'FWSwiftBridge/WechatOpenSDK/*.swift', 'FWSwiftBridge/WechatOpenSDK/*.modulemap', 'FWSwiftBridge/WechatOpenSDK/*.h'
+    plugin.public_header_files = 'FWSwiftBridge/WechatOpenSDK/*.h'
+    plugin.vendored_libraries = 'FWSwiftBridge/WechatOpenSDK/libWeChatSDK.a'
+    plugin.xcconfig = { 'SWIFT_INCLUDE_PATHS' => '${PODS_TARGET_SRCROOT}/FWSwiftBridge/WechatOpenSDK', 'OTHER_LDFLAGS' => '-ObjC -all_load' }
+    plugin.preserve_paths = 'FWSwiftBridge/WechatOpenSDK/module.modulemap'
     plugin.libraries = 'z', 'c++', 'sqlite3.0'
     plugin.frameworks = 'UIKit', 'WebKit', 'CoreGraphics', 'Security'
   end
 
   spec.subspec 'AlipaySDK-iOS' do |plugin|
-    plugin.source_files = 'AlipaySDK-iOS/*.swift'
-    plugin.vendored_frameworks = 'AlipaySDK-iOS/AlipaySDK.framework'
-    plugin.resources = 'AlipaySDK-iOS/AlipaySDK.bundle'
-    plugin.xcconfig = { 'SWIFT_INCLUDE_PATHS' => '${PODS_TARGET_SRCROOT}/AlipaySDK-iOS', 'OTHER_LDFLAGS' => '-ObjC -all_load' }
-    plugin.preserve_paths = 'AlipaySDK-iOS/module.modulemap'
+    plugin.source_files = 'FWSwiftBridge/AlipaySDK-iOS/*.swift', 'FWSwiftBridge/AlipaySDK-iOS/*.modulemap'
+    plugin.vendored_frameworks = 'FWSwiftBridge/AlipaySDK-iOS/AlipaySDK.framework'
+    plugin.resources = 'FWSwiftBridge/AlipaySDK-iOS/AlipaySDK.bundle'
+    plugin.xcconfig = { 'SWIFT_INCLUDE_PATHS' => '${PODS_TARGET_SRCROOT}/FWSwiftBridge/AlipaySDK-iOS', 'OTHER_LDFLAGS' => '-ObjC -all_load' }
+    plugin.preserve_paths = 'FWSwiftBridge/AlipaySDK-iOS/module.modulemap'
     plugin.libraries = 'z', 'c++'
     plugin.frameworks = 'UIKit', 'Foundation', 'CFNetwork', 'SystemConfiguration', 'QuartzCore', 'CoreGraphics', 'CoreMotion', 'CoreTelephony', 'CoreText', 'WebKit'
   end

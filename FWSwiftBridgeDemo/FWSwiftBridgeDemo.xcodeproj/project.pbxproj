@@ -27,9 +27,10 @@
 		2F15E9A124DD55B200221847 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2F15E9A424DD55B200221847 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2F15E9A624DD55B200221847 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2F15E9AC24E0E4FF00221847 /* FWSwiftBridgeDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FWSwiftBridgeDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		2F15E9AC24E0E4FF00221847 /* BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgingHeader.h; sourceTree = "<group>"; };
 		2F15E9AD24E0E50000221847 /* ObjcController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjcController.h; sourceTree = "<group>"; };
 		2F15E9AE24E0E50000221847 /* ObjcController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjcController.m; sourceTree = "<group>"; };
+		2FCB90C324E11ACD00D049F0 /* SwiftHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftHeader.h; sourceTree = "<group>"; };
 		75C544E1B3E6DF2171792DFC /* Pods-FWSwiftBridgeDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FWSwiftBridgeDemo.release.xcconfig"; path = "Target Support Files/Pods-FWSwiftBridgeDemo/Pods-FWSwiftBridgeDemo.release.xcconfig"; sourceTree = "<group>"; };
 		A00C0961676130DA7329DE32 /* Pods-FWSwiftBridgeDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FWSwiftBridgeDemo.debug.xcconfig"; path = "Target Support Files/Pods-FWSwiftBridgeDemo/Pods-FWSwiftBridgeDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -75,7 +76,8 @@
 				2F15E99E24DD55B000221847 /* Main.storyboard */,
 				2F15E9A124DD55B200221847 /* Assets.xcassets */,
 				2F15E9A324DD55B200221847 /* LaunchScreen.storyboard */,
-				2F15E9AC24E0E4FF00221847 /* FWSwiftBridgeDemo-Bridging-Header.h */,
+				2F15E9AC24E0E4FF00221847 /* BridgingHeader.h */,
+				2FCB90C324E11ACD00D049F0 /* SwiftHeader.h */,
 				2F15E9A624DD55B200221847 /* Info.plist */,
 			);
 			path = FWSwiftBridgeDemo;
@@ -109,7 +111,7 @@
 				2F15E99124DD55B000221847 /* Sources */,
 				2F15E99224DD55B000221847 /* Frameworks */,
 				2F15E99324DD55B000221847 /* Resources */,
-				165CC90B90051452AD59FA23 /* [CP] Embed Pods Frameworks */,
+				CA2793CE9601655F6125E355 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -168,23 +170,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		165CC90B90051452AD59FA23 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FWSwiftBridgeDemo/Pods-FWSwiftBridgeDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FWSwiftBridgeDemo/Pods-FWSwiftBridgeDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FWSwiftBridgeDemo/Pods-FWSwiftBridgeDemo-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		38D7B1567EBBF55FA65DA354 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -205,6 +190,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CA2793CE9601655F6125E355 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FWSwiftBridgeDemo/Pods-FWSwiftBridgeDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FWSwiftBridgeDemo/Pods-FWSwiftBridgeDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FWSwiftBridgeDemo/Pods-FWSwiftBridgeDemo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -371,7 +373,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = site.wuyong.FWSwiftBridgeDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "FWSwiftBridgeDemo/FWSwiftBridgeDemo-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = FWSwiftBridgeDemo/BridgingHeader.h;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -392,7 +394,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = site.wuyong.FWSwiftBridgeDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "FWSwiftBridgeDemo/FWSwiftBridgeDemo-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = FWSwiftBridgeDemo/BridgingHeader.h;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
