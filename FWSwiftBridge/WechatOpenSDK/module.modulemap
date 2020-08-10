@@ -1,7 +1,7 @@
-module FWSwiftBridge {
-  header "WXApiObject.h"
-  header "WXApi.h"
-  header "WechatAuthSDK.h"
-
-  export *
+module WechatOpenSDK {
+    requires objc
+    header "WXApi.h"
+    header "WXApiObject.h"
+    header "WechatAuthSDK.h"
+    export *
 }
