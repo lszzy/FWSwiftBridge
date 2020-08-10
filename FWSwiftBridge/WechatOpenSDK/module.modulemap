@@ -1,4 +1,4 @@
-module FWSwiftBridge {
+module WechatOpenSDK {
     requires objc
     header "WXApi.h"
     header "WXApiObject.h"
