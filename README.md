@@ -7,5 +7,18 @@
 
 Swift bridge for WechatOpenSDK and AlipaySDK-iOS
 
-* WechatOpenSDK 1.8.7.1
-* AlipaySDK-iOS 15.7.9
+## Cocoapods
+
+	pod 'FWSwiftBridge'
+
+## WechatOpenSDK
+
+Version: 1.8.7.1
+
+	import FWSwiftBridge
+
+## AlipaySDK-iOS
+
+Version: 15.7.9
+
+	import AlipaySDK
