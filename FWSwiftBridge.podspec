@@ -10,7 +10,11 @@ Pod::Spec.new do |spec|
   spec.platform            = :ios, '9.0'
   spec.swift_version       = '5.0'
   spec.frameworks          = [ 'Foundation' ]
-  spec.default_subspecs    = [ 'WechatOpenSDK', 'AlipaySDK-iOS' ]
+  spec.default_subspecs    = [ 'FWSwiftBridge', 'WechatOpenSDK', 'AlipaySDK-iOS' ]
+
+  spec.subspec 'FWSwiftBridge' do |plugin|
+    plugin.source_files = 'FWSwiftBridge/*.swift'
+  end
 
   spec.subspec 'WechatOpenSDK' do |plugin|
     plugin.source_files = 'FWSwiftBridge/WechatOpenSDK/*.h'
@@ -23,7 +27,6 @@ Pod::Spec.new do |spec|
   end
 
   spec.subspec 'AlipaySDK-iOS' do |plugin|
-    plugin.source_files = 'FWSwiftBridge/AlipaySDK-iOS/*.swift'
     plugin.vendored_frameworks = 'FWSwiftBridge/AlipaySDK-iOS/AlipaySDK.framework'
     plugin.resources = 'FWSwiftBridge/AlipaySDK-iOS/AlipaySDK.bundle'
     plugin.xcconfig = { 'SWIFT_INCLUDE_PATHS' => '${PODS_TARGET_SRCROOT}/FWSwiftBridge/AlipaySDK-iOS', 'OTHER_LDFLAGS' => '-ObjC -all_load' }
