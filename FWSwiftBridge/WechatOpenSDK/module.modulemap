@@ -1,4 +1,4 @@
-module WechatOpenSDK {
+module FWSwiftBridge {
   header "WXApiObject.h"
   header "WXApi.h"
   header "WechatAuthSDK.h"

@@ -8,7 +8,6 @@
 
 import UIKit
 import FWSwiftBridge
-import WechatOpenSDK
 import AlipaySDK
 
 class ViewController: UIViewController, WXApiDelegate {

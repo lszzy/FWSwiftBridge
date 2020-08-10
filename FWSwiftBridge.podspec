@@ -13,7 +13,7 @@ Pod::Spec.new do |spec|
   spec.default_subspecs    = [ 'WechatOpenSDK', 'AlipaySDK-iOS' ]
 
   spec.subspec 'WechatOpenSDK' do |plugin|
-    plugin.source_files = 'FWSwiftBridge/WechatOpenSDK/*.swift', 'FWSwiftBridge/WechatOpenSDK/*.h'
+    plugin.source_files = 'FWSwiftBridge/WechatOpenSDK/*.h'
     plugin.public_header_files = 'FWSwiftBridge/WechatOpenSDK/*.h'
     plugin.vendored_libraries = 'FWSwiftBridge/WechatOpenSDK/libWeChatSDK.a'
     plugin.xcconfig = { 'SWIFT_INCLUDE_PATHS' => '${PODS_TARGET_SRCROOT}/FWSwiftBridge/WechatOpenSDK', 'OTHER_LDFLAGS' => '-ObjC -all_load' }

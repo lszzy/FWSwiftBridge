@@ -7,6 +7,7 @@
 //
 
 #import "ObjcController.h"
+#import "SwiftHeader.h"
 #import <WXApi.h>
 #import <AlipaySDK/AlipaySDK.h>
 
