@@ -8,6 +8,7 @@
 
 #import "ObjcController.h"
 #import <WXApi.h>
+#import <AlipaySDK/AlipaySDK.h>
 
 @interface ObjcController () <WXApiDelegate>
 
@@ -18,6 +19,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"ObjcController";
+    
+    [WXApi registerApp:@"" universalLink:@""];
+    [AlipaySDK defaultService];
 }
 
 @end

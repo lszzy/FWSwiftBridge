@@ -1,6 +1,8 @@
 PODS:
   - FWSwiftBridge (1.0.0):
+    - FWSwiftBridge/AlipaySDK-iOS (= 1.0.0)
     - FWSwiftBridge/WechatOpenSDK (= 1.0.0)
+  - FWSwiftBridge/AlipaySDK-iOS (1.0.0)
   - FWSwiftBridge/WechatOpenSDK (1.0.0)
 
 DEPENDENCIES:
@@ -11,7 +13,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  FWSwiftBridge: c833ec2c302b9d3d41d70c9bd60483b15c41f5d1
+  FWSwiftBridge: 739f3105f6fa48661ec9b7d23e4127d62c3e6905
 
 PODFILE CHECKSUM: e7ef4a55af77ffd1ccc9365696147e02c10c7fe5
 
