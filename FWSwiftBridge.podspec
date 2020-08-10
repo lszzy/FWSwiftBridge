@@ -27,7 +27,7 @@ Pod::Spec.new do |spec|
     plugin.vendored_frameworks = 'AlipaySDK-iOS/AlipaySDK.framework'
     plugin.resources = 'AlipaySDK-iOS/AlipaySDK.bundle'
     plugin.xcconfig = { 'SWIFT_INCLUDE_PATHS' => '${PODS_TARGET_SRCROOT}/AlipaySDK-iOS', 'OTHER_LDFLAGS' => '-ObjC -all_load' }
-    plugin.preserve_paths = 'AlipaySDK/module.modulemap'
+    plugin.preserve_paths = 'AlipaySDK-iOS/module.modulemap'
     plugin.libraries = 'z', 'c++'
     plugin.frameworks = 'UIKit', 'Foundation', 'CFNetwork', 'SystemConfiguration', 'QuartzCore', 'CoreGraphics', 'CoreMotion', 'CoreTelephony', 'CoreText', 'WebKit'
   end
