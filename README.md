@@ -19,6 +19,6 @@ Version: 1.8.7.1
 
 ## AlipaySDK-iOS
 
-Version: 15.7.9
+Version: 15.7.4
 
 	import AlipaySDK

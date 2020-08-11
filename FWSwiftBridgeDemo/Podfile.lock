@@ -13,7 +13,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  FWSwiftBridge: 5148a3606b389e61591eed272ab5df81bd66fb92
+  FWSwiftBridge: 6dfcbb39d65fcb79d3a1b03589dbc517aed47a5c
 
 PODFILE CHECKSUM: e7ef4a55af77ffd1ccc9365696147e02c10c7fe5
 
