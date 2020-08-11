@@ -7,6 +7,7 @@ Pod::Spec.new do |spec|
   spec.author              = { 'Wu Yong' => 'admin@wuyong.site' }
   spec.source              = { :git => 'https://github.com/lszzy/FWSwiftBridge.git', :tag => spec.version, :submodules => true }
   spec.platform            = :ios, '9.0'
+  spec.swift_version       = '5.0'
   spec.default_subspecs    = [ 'WechatOpenSDK', 'AlipaySDK-iOS' ]
 
   spec.subspec 'WechatOpenSDK' do |plugin|
