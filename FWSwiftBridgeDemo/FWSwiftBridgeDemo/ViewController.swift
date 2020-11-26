@@ -15,9 +15,11 @@ class ViewController: UIViewController, WXApiDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "ViewController"
+        self.view.backgroundColor = UIColor.systemBackground
         
         WXApi.registerApp("", universalLink: "")
         AlipaySDK.defaultService()
+        UPPaymentControl.default()
         
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "ObjC", style: .plain, target: self, action: #selector(onObjc))
     }

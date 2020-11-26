@@ -3,4 +3,5 @@ use_frameworks!
 
 target 'FWSwiftBridgeDemo' do
   pod 'FWSwiftBridge', :path => '../'
+  pod 'UPPaymentControl', :path => 'LocalPods/'
 end
