@@ -8,18 +8,18 @@ PODS:
 
 DEPENDENCIES:
   - FWSwiftBridge (from `../`)
-  - UPPaymentControl (from `LocalPods/`)
+  - UPPaymentControl (from `../`)
 
 EXTERNAL SOURCES:
   FWSwiftBridge:
     :path: "../"
   UPPaymentControl:
-    :path: LocalPods/
+    :path: "../"
 
 SPEC CHECKSUMS:
   FWSwiftBridge: c08cb49e6031d723601fad3045dbc234bc237ae6
-  UPPaymentControl: d83c8fabc0f3de40d806a54f5e26514fd08c843d
+  UPPaymentControl: e8018358b19929ea39a282df1d632b5aeda55b64
 
-PODFILE CHECKSUM: 81f0ce7fd8993afbc16132f76ee81fe43fef16bd
+PODFILE CHECKSUM: 763ffafcdad9242b25d35cd387b2397c4c6e1c6b
 
-COCOAPODS: 1.10.0
+COCOAPODS: 1.11.2
