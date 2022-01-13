@@ -4,17 +4,22 @@ PODS:
     - FWSwiftBridge/WechatOpenSDK (= 1.0.0)
   - FWSwiftBridge/AlipaySDK-iOS (1.0.0)
   - FWSwiftBridge/WechatOpenSDK (1.0.0)
+  - UPPaymentControl (3.3.14)
 
 DEPENDENCIES:
   - FWSwiftBridge (from `../`)
+  - UPPaymentControl (from `../`)
 
 EXTERNAL SOURCES:
   FWSwiftBridge:
     :path: "../"
+  UPPaymentControl:
+    :path: "../"
 
 SPEC CHECKSUMS:
-  FWSwiftBridge: 6dfcbb39d65fcb79d3a1b03589dbc517aed47a5c
+  FWSwiftBridge: c08cb49e6031d723601fad3045dbc234bc237ae6
+  UPPaymentControl: e8018358b19929ea39a282df1d632b5aeda55b64
 
-PODFILE CHECKSUM: e7ef4a55af77ffd1ccc9365696147e02c10c7fe5
+PODFILE CHECKSUM: 763ffafcdad9242b25d35cd387b2397c4c6e1c6b
 
-COCOAPODS: 1.9.3
+COCOAPODS: 1.11.2

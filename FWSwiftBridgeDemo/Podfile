@@ -1,6 +1,8 @@
-platform :ios, '9.0'
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '11.0'
 use_frameworks!
 
 target 'FWSwiftBridgeDemo' do
   pod 'FWSwiftBridge', :path => '../'
+  pod 'UPPaymentControl', :path => '../'
 end
